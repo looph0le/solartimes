@@ -93,7 +93,7 @@ export default function Aussitime() {
             link="https://goo.gl/maps/vcENkrdNqHG5PVfm8"
             post="2600"
             state="ACT"
-            capital="Canbera"
+            capital="Canberra"
             tz="Australia/Sydney"
           ></AussiTZ>
 
