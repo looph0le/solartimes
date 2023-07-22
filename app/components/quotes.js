@@ -31,7 +31,7 @@ export default function Motivation(){
       { getData ? 
       <div>
         <div className="text-lg py-3">
-          <h1>"{getData.content}"</h1>
+          <h1>{getData.content}</h1>
         </div>
         <a href={`https://www.google.com/search?q=` + getData.author} target="_blank" rel="noreferrer" className="font-medium text-sm underline">{getData.author}</a>
       </div>

@@ -26,6 +26,7 @@ export default function Home() {
         </div>
         
         <Aussiweather></Aussiweather>
+
       </div>
 
         <Nav></Nav>
