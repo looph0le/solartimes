@@ -21,7 +21,7 @@ export default function Motivation(){
   }, [])
 
   return (
-    <div className="p-2 mx-auto bg-cyan-400/10 backdrop-blur-sm text-black border border-black w-full">
+    <div className="p-2 mx-auto backdrop-blur-sm text-[#FFFE33] border border-black w-full bg-black/80">
       <div className='flex'>
         <div className='px-1'>
           <BiSolidQuoteLeft></BiSolidQuoteLeft>
@@ -30,7 +30,7 @@ export default function Motivation(){
       </div>
       { getData ? 
       <div>
-        <div className="text-lg py-3">
+        <div className="text-lg py-3 text-white">
           <h1>{getData.content}</h1>
         </div>
         <a href={`https://www.google.com/search?q=` + getData.author} target="_blank" rel="noreferrer" className="font-medium text-sm underline">{getData.author}</a>

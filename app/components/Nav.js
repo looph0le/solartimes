@@ -13,7 +13,7 @@ export default function Nav() {
   }
   
   return (
-    <div className="p-5 flex justify-between bg-cyan-400/10 text-gray-900 border-b border-b-2 border-gray-500 backdrop-blur-sm fixed top-0 right-0 w-screen">
+    <div className="p-5 flex justify-between text-white border-b border-b-2 border-[#FFFE33] backdrop-blur-lg fixed top-0 right-0 w-screen bg-black/80">
 
       <div className="flex my-auto">
         <div className="text-2xl mt-auto mx-2">
@@ -22,7 +22,7 @@ export default function Nav() {
         <h1>Solar Times</h1>
       </div>
 
-      <div className="text-[10px] lg:text-lg mx-auto mt-auto flex">
+      <div className="text-[10px] lg:text-sm mx-auto mt-auto flex">
         <div className="mx-2 my-auto">
           <BsFillCalendarCheckFill></BsFillCalendarCheckFill>
         </div>
@@ -33,7 +33,7 @@ export default function Nav() {
       </div>
 
       <div className="my-auto lg:ml-0">
-        <button onClick={refreshPage} className="text-xl bg-black hover:text-blue-500 p-2 rounded-full text-white hover:animate-spin">
+        <button onClick={refreshPage} className="text-xl bg-black p-2 rounded-full text-white hover:animate-spin">
           <TbRefreshDot></TbRefreshDot>
         </button>
       </div>

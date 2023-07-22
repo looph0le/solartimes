@@ -11,7 +11,7 @@ async function getData(){
 export default async function Aussinews(){
   const data = await getData();
   return (
-    <div className="p-2 mx-auto text-black">
+    <div className="p-2 mx-auto text-[#FFFE33]">
       <div className='flex'>
         <div className='px-1 my-auto text-xl px-2'>
           <FaRegNewspaper></FaRegNewspaper>
@@ -23,10 +23,10 @@ export default async function Aussinews(){
         {data.articles.map(c => 
           <a key={c.publishedAt} href={c.url}>
           <div key={c.publishedAt} className="p-3 m-1 border-b border-black transition-all hover:py-10">
-            <h1 className="">{c.title}</h1>
-            <div className="flex justify-between">
-              <p className="text-xs text-gray-500">{c.publishedAt}</p>
-              <p className="text-xs text-gray-500">{c.author}</p>
+            <h1 className="text-white">{c.title}</h1>
+            <div className="flex justify-between text-[#FFE205]">
+              <p className="text-xs">{c.publishedAt}</p>
+              <p className="text-xs">{c.author}</p>
             </div>
           </div>
           </a>

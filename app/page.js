@@ -11,7 +11,6 @@ export default function Home() {
     <main className="">
 
       <div className="w-full h-screen absolute top-0 left-0">
-        <Design></Design>
       </div>
 
       <div className='grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 m-3 mt-[100px] container mx-auto'>
@@ -21,7 +20,7 @@ export default function Home() {
         <Aussitime></Aussitime>
 
 
-        <div className='h-[500px] border border-black lg:col-span-4 bg-cyan-400/10 backdrop-blur-sm overflow-y-scroll'>
+        <div className='h-[500px] border border-black lg:col-span-4 overflow-y-scroll backdrop-blur-sm bg-black/80'>
           <Aussinews></Aussinews>
         </div>
         
