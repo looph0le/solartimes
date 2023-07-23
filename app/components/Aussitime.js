@@ -10,15 +10,17 @@ const AussiTZ = (props) => {
       <a href={props.link} target="_blank" rel="noreferrer">
       <div className='flex justify-between text-white border-b border-white/50 py-1 transition-all hover:py-6 ease-it-out duration-500 p-1'>
         <div className='flex'>
-          <p className='text-xs px-1 text-[#FFFE33]'>{props.post}</p>
-          <p>{props.state}</p>
-          <p className='text-xs px-1 text-[#FFFE33]'>{props.capital}</p>
+          <p className='text-xs px-1 text-cyan-300'>{props.post}</p>
+          <p className='text-gray-300'>{props.state}</p>
+          <p className='text-xs px-1 text-cyan-300'>{props.capital}</p>
         </div>
-        <Clock 
-          format={'hh:mm A'} 
-          ticking={true}
-          timezone={props.tz}
-        ></Clock>
+        <div className=''>
+          <Clock 
+            format={'hh:mm A'} 
+            ticking={true}
+            timezone={props.tz}
+          ></Clock>
+        </div>
       </div>
       </a>
     </>
@@ -28,10 +30,10 @@ const AussiTZ = (props) => {
 
 export default function Aussitime() {
   return (
-      <div className="p-2 mx-auto backdrop-blur-sm text-[#FFFE33] border border-black w-full bg-black/80">
+      <div className="p-2 mx-auto backdrop-blur-sm text-cyan-400 border border-black w-full bg-black/80">
 
         <div className='flex'>
-          <div className='my-auto px-2 text-xl'>
+          <div className='my-auto px-2 text-xl '>
             <GiHeavyTimer></GiHeavyTimer>
           </div>
           <p className="rounded-md text-xl">Timezones</p> 

@@ -13,7 +13,7 @@ export default function Nav() {
   }
   
   return (
-    <div className="p-5 flex justify-between text-white border-b border-b-2 border-[#FFFE33] backdrop-blur-lg fixed top-0 right-0 w-screen bg-black/80">
+    <div className="p-5 flex justify-between text-white border-b border-b-1 border-[#0f0f0f] fixed top-0 right-0 w-screen backdrop-blur-sm bg-gray-800/50">
 
       <div className="flex my-auto">
         <div className="text-2xl mt-auto mx-2">
@@ -27,7 +27,7 @@ export default function Nav() {
           <BsFillCalendarCheckFill></BsFillCalendarCheckFill>
         </div>
         <Clock 
-          format={'DD-MMMM-YYYY / h:mm A / dddd'}
+          format={'DD-MMMM-YYYY | dddd'}
           ticking={true}
         ></Clock>
       </div>
